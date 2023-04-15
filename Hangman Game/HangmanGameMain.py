@@ -1,5 +1,8 @@
-"""The following is a "Hangman Game". To know more in detail how the game works, please visit 'https://hangmanwordgame.com/' or 'https://en.wikipedia.org/wiki/Hangman_(game)'
+"""The following is a "Hangman Game". To know more in detail how the game works, please visit: 
+'https://hangmanwordgame.com/'  OR  'https://en.wikipedia.org/wiki/Hangman_(game)'
+Please make sure in whichever IDE you run this code, make sure all the files are saved in the same folder so they are accessible directly without giving the relative path.
 """
+
 
 import random
 from hangmanArt import logo, stages
