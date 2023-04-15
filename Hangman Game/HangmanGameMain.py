@@ -21,7 +21,6 @@ playerLives = 6
 endOfGame = False
 chosenWordLength = len(chosenWord)
 displayingList = []
-print(chosenWord)
 
 for i in range(chosenWordLength):
     displayingList += "_"
