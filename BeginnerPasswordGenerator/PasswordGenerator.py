@@ -56,7 +56,6 @@ To convert that list to string, one can just simply use for loop adding each cha
 
 """
 ===============YET ANOTHER METHOD===============
-
 NOTE: Only useful if the user doesn't specify the amount of specific character they need
 
 strongerPassword = ""
