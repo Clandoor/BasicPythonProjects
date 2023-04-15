@@ -1,3 +1,6 @@
+"""Following file / module contains the basic text art for the main game.
+"""
+
 
 logo = ''' 
  _                                             
