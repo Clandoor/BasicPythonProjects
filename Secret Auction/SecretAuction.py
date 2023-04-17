@@ -1,5 +1,6 @@
 """Following program works in a scenario where people are bidding via a machine and where they can't compete for bids. Each bid is kept unknown from the previous and other bidders.
 At the end, the bidder with the highest bid wins hence revealing their name and an appropriate messsage.
+Please make sure 'art.py' is in the same folder / location where the main code file is stored in order to eliminate the need to give the relative path. 
 """
 
 import os
