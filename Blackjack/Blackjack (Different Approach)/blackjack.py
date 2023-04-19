@@ -41,7 +41,8 @@ def usersTurn(cards, usersCardList, computersCardList):
         if 11 in usersCardList and usersTotal > 21:
             usersCardList.remove(11)
             usersCardList.append(1)
-        
+            usersTotal = sum(usersCardList)
+            
         #Checking for blackjack
         isBlackJack = checkBlackJack(usersCardList)
         if isBlackJack:
@@ -82,7 +83,9 @@ def computersTurn(cards, usersCardList, computersCardList, usersTotal):
     if 11 in computersCardList and computersTotal > 21:
         computersCardList.remove(11)
         computersCardList.append(1)
-
+        computersTotal = sum(computersCardList)
+        
+    #Checking for blackjack
     isBlackJack = checkBlackJack(computersCardList)
     if isBlackJack:
         printDetails(usersCardList, computersCardList, usersTotal,
