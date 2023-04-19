@@ -1,6 +1,6 @@
 import random
 from art import logo
-from replit import clear
+import os
 
 
 def calculateScore(cards):
@@ -81,5 +81,5 @@ def mainGame():
 
 while input(
         "Do you want to play a game of Blackjack? Type 'y' or 'n': ") == 'y':
-    clear()
+    os.system('cls')
     mainGame()
