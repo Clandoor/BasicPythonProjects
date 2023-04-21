@@ -1,6 +1,8 @@
 """Following code is a simulation of "Higher Lower Game". Select the entity which you think has more followers or fans out of the two options presented on the screen. If your choice is correct, then your score is incremented by one unit, or else if your choice is wrong, game gets over displaying your final score.
 Make sure the other files are saved in the same location / folder as the first file.
+Edit: Added a while loop to make sure firstIndex and secondIndex are not the same.
 """
+
 
 import random
 import os
@@ -85,6 +87,11 @@ def check(firstIndex, secondIndex, alreadyOccured, score):
 lastIndex = len(data) - 1
 firstIndex = random.randint(0, lastIndex)
 secondIndex = random.randint(0, lastIndex)
+
+#If in case both the values are same, this will keep running till their values are not same.
+while firstIndex == secondIndex:
+    secondIndex = random.randint(0, lastIndex)
+    
 alreadyOccured = []
 alreadyOccured.append(secondIndex)
 
