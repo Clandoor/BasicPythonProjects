@@ -49,7 +49,7 @@ def check(firstIndex, secondIndex, alreadyOccured, score):
 
     print(vs)
 
-    print(f"\nCompare B: {data[secondIndex]['name']}, a {data[secondIndex]['description']}, from {data[secondIndex]['country']}\n")
+    print(f"\nAgainst B: {data[secondIndex]['name']}, a {data[secondIndex]['description']}, from {data[secondIndex]['country']}\n")
         
     usersChoice = usersDecision()
 
