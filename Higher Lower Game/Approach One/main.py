@@ -3,7 +3,7 @@ Make sure the other files are saved in the same location / folder as the first f
 """
 
 import random
-from replit import clear
+import os
 from art import vs, logo
 from game_data import data
 
@@ -31,13 +31,13 @@ def compareRecords(firstIndex, secondIndex, score):
     """Compares the amount of followers and increments the value of score by one unit if needed"""
     if data[firstIndex]['follower_count'] > data[secondIndex]['follower_count']:
         score += 1
-        clear()
+        os.system('cls')
         print(logo)
         print(f"You're right! Your score is {score}")
         return score
 
     else:
-        clear()
+        os.system('cls')
         print(logo)
         print(f"Sorry, that's wrong. Final score: {score}")
         return 'END'
